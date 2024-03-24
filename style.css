@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body{
+    margin: 0;
+    height: 180vh;
+    overflow: hidden;
+}
+#beetwen::-webkit-scrollbar{
+    display: none;
+}
+#left_menu_scroll{
+    transition: all 1s;
+    position: fixed;
+    left: 39%;
+    /* left: calc(1.4 * -12vw); */
+    top: -130%;
+    border-radius: 10px 10px 10px 10px;
+    width: 23.33vw;
+    height: 53vh;
+    opacity: 0;
+    background-color: rgb(255, 0, 0);
+    min-height: 53vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+#left,#right{
+height: 180vh;
+width: 20%;
+background-color: rgb(0, 0, 0);
+}
+#beetwen{
+    height: 100vh;
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    overflow-y: scroll;
+}
+#top_beetwen{
+    height: 50px;
+    width: 99.8%;
+    border: 1px solid #2F3336;
+    border-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #E7E9EA;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+}
+
+
+.mid{
+display: flex;
+height: 180vh;
+width: 100%;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.profile > img{
+    height: 86.45px;
+    width: 86.45px;
+    cursor: pointer;
+    min-width: 86.45px;
+    min-height: 86.45px;
+}
+#Profil{
+  color: #E7E9EA;
+  font-size: 1em;
+  font-family: "Source Code Pro", monospace;
+  
+
+}
+#left_menu{
+    width: 199.5px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.Options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E7E9EA;
+    font-family: "Source Code Pro", monospace;
+    cursor: pointer;
+}
+#option_class{
+    margin-left: 2%;
+    height: 55.45px;
+    width: 55.45px;
+    margin-right: 10px;
+    margin-left: 5%;
+}
+#Opcje{
+font-size: 1em;
+}
+.ss{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    opacity: 0.9;
+    background-color: rgb(0, 0, 0);
+    transition: all 1s;
+    filter:blur(100%);
+    z-index: 1;
+}
+#main_leftmenu{
+    border-radius: 10px 10px 0px 0px;
+    float: left;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left_leftmenu{
+height: 100px;
+background-color: rgb(26, 26, 26);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 0px;
+}
+#big_click{
+    width:60px; 
+    height:30px;
+    background-color:gainsboro;
+    border-radius:50px 50px 50px 50px;
+    -moz-border-radius:50px 0px 0px 50px;
+}
+#little_click{
+position: relative;
+left: 2px;
+top: 2.7px;
+width:25px;
+height:25px;
+background-color:rgb(0, 0, 0);
+border-radius:75px;
+-moz-border-radius:75px;
+transition: all 1s;
+}
+.kk{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    opacity: 0.9;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    transition: all 1s;
+}
+.login {
+    z-index: 2;
+    transition: all 1s;
+    position: fixed;
+    left: 39%;
+    top: -130%;
+    border-radius: 10px 10px 10px 10px;
+    width: 23.33vw;
+    height: 42vh;
+    opacity: 0;
+    background-color: rgb(15, 13, 13);
+    min-height: 42vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+}
+.login > img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+}
+#name1{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #E7E9EA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-radius:50px 50px 50px 50px;
+    -moz-border-radius:50px 0px 0px 50px;
+
+}
+#Login_name{
+    margin-left: auto;
+    margin-right: auto;
+    color: #E7E9EA;
+}
+#password{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; 
+    border: 3px solid #E7E9EA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-radius:50px 50px 50px 50px;
+    -moz-border-radius:50px 0px 0px 50px;
+
+}
+#password_name{
+    margin-left: auto;
+    margin-right: auto;
+    color: #E7E9EA;
+}
+#submit{
+    margin-top: 50px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-radius:50px 50px 50px 50px;
+    -moz-border-radius:50px 0px 0px 50px;
+}
+.login > h3{
+    margin-left: auto;
+    margin-right: auto;
+    color: #E7E9EA;
+}
+.register{
+    transition: all 1s;
+    position: fixed;
+    left: 39%;
+    top: -130%;
+    border-radius: 10px 10px 10px 10px;
+    width: 23.33vw;
+    height: 42vh;
+    opacity: 0;
+    background-color: rgb(15, 13, 13);
+    min-height: 42vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.register > img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+}
+#Haslo{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; 
+    border: 3px solid #E7E9EA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-radius:50px 50px 50px 50px;
+    -moz-border-radius:50px 0px 0px 50px; 
+}
+#Login{
+    margin-left: auto;
+    margin-right: auto;
+    color: #E7E9EA;
+}
+#register{
+    margin-top: 50px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-radius:50px 50px 50px 50px;
+    -moz-border-radius:50px 0px 0px 50px;
+}
+#name{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #E7E9EA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-radius:50px 50px 50px 50px;
+    -moz-border-radius:50px 0px 0px 50px;
+
+}
+#password_name1{
+    margin-left: auto;
+    margin-right: auto;
+    color: #E7E9EA;
+}
+#Napis_login{
+    margin-left: auto;
+    margin-right: auto;
+    color: #E7E9EA;
+}
+#right{
+    overflow: hidden;
+}
+#right > img{
+   position: relative;
+top: 4.22%;
+   right: 76.5%;
+   z-index: 0;
+}
+.profil_po_logowaniu{
+    transition: all 1s;
+    position: fixed;
+    left: 29.8%;
+    top: -130%;
+    border-radius: 10px 10px 10px 10px;
+    width: 40vw;
+    height: 60vh;
+    opacity: 0;
+    background-color: rgb(37, 37, 37);
+    min-height: 42vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column; 
+    z-index: 2;
+}
+
+.posty{
+    width: 99.8%;
+    height: 20vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    border: 1px solid #2F3336;
+}
+.logo_look{
+    border-radius: 100%;
+    height: 6vh;
+    width: 6vh;
+    margin-left: 5px;
+    overflow: hidden;
+    background-size: 6vh 6vh;
+    margin-bottom: 2vh;
+}
+.description_look{
+color: #E7E9EA;
+}
+.comment_look{
+    background-image: url(zdjecia/comment.png);
+    width: 10px;
+    height: 10px;
+}
+.Nick_look{
+    font-family: "Source Code Pro", monospace;
+}
