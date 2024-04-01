@@ -164,12 +164,10 @@ transition: all 1s;
     left: 39%;
     top: -130%;
     border-radius: 10px 10px 10px 10px;
-    width: 23.33vw;
-    height: 42vh;
+    width: 23.33%;
+    height: 42%;
     opacity: 0;
     background-color: rgb(15, 13, 13);
-    min-height: 42vh;
-    min-width: 300px;
     display: flex;
     flex-direction: column;
     font-family: "Source Code Pro", monospace;
@@ -195,6 +193,7 @@ transition: all 1s;
     margin-left: auto;
     margin-right: auto;
     color: #E7E9EA;
+    transition: 2s all;
 }
 #password{
     width: 200px;

@@ -209,9 +209,21 @@ window.addEventListener('load', (event) =>{
     followers.innerHTML += Math.round(Math.random()*10)
 })
 
-
-//Profil images
-let Images_profil = document.getElementById('#Images')
-Images_profil.addEventListener('click', function(){
-
+//galleria
+let photo1 = document.querySelector('.gallery_photo1')
+let photo2 = document.querySelector('.gallery_photo2')
+let photo3 = document.querySelector('.gallery_photo3')
+let photo4 = document.querySelector('.gallery_photo4')
+let photo_show = document.querySelector('.big')
+photo1.addEventListener('click', function(){
+    photo_show.style.backgroundImage = "url('zdjecia/las.png')";
+})
+photo2.addEventListener('click', function(){
+    photo_show.style.backgroundImage = "url('zdjecia/lotnisko.png')";
+})
+photo3.addEventListener('click', function(){
+    photo_show.style.backgroundImage = "url('zdjecia/morze.png')";
+})
+photo4.addEventListener('click', function(){
+    photo_show.style.backgroundImage = "url('zdjecia/góry.png')";
 })

@@ -20,6 +20,7 @@ let Zmiana_na_Rejestracje = document.querySelector('#Napis')
 let register = document.querySelector('.register')
 let back_login = document.querySelector('#Napis_login')
 let profil_after_login = document.querySelector(".profil_po_logowaniu")
+let login_name = document.querySelector("#name1")
 //Ciemna strona
 function dark(){
     left.style.backgroundColor = 'black'
@@ -309,4 +310,18 @@ post_withoutimg.appendChild(comment)
 
 
 
-// Profil zalogowanego 
+function music(){
+var audio = new Audio('Windows_xp.mp3');
+audio.play();
+}
+window.addEventListener("keydown", checkKeyPressed, false);
+
+function checkKeyPressed(evt) {
+    if (evt.keyCode == "13") {
+        prompt("Brawo znalazłeś sekretny dźwięk")
+        music()
+    }
+}
+login_name.addEventListener('click', function(){
+    login_name.style.transform='scale(1.2, 1.2)'
+})
