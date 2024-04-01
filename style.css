@@ -347,3 +347,26 @@ color: #E7E9EA;
 .Nick_look{
     font-family: "Source Code Pro", monospace;
 }
+#Search{
+    height: 15%;
+}
+
+#Search_child{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    width: 60%;
+    height: 15%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #2F3336;
+    background-color: #000000;
+    color: #E7E9EA;
+}
+#search{
+    color: #E7E9EA;
+    position: relative;
+    left: 24%;
+    font-family: "Source Code Pro", monospace;
+
+}

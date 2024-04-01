@@ -318,10 +318,24 @@ window.addEventListener("keydown", checkKeyPressed, false);
 
 function checkKeyPressed(evt) {
     if (evt.keyCode == "13") {
-        prompt("Brawo znalazłeś sekretny dźwięk")
         music()
     }
 }
 login_name.addEventListener('click', function(){
     login_name.style.transform='scale(1.2, 1.2)'
 })
+//Wyszukiwanie
+const Search  = document.getElementById('Search_child')
+
+    Search.addEventListener('keyup', e =>{
+        let conapisane = e.target.value.toLowerCase();
+        let post = document.getElementsByClassName('posty')
+        var nick = document.getElementsByClassName('Nick_look');
+        for(i=0;i<15;i++){
+        if(nick[i].innerHTML.toLowerCase().includes(conapisane)){
+            post[i].style.display='flex';
+        }else{
+            post[i].style.display='none';
+        }
+    }
+    })
