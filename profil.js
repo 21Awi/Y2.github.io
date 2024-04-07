@@ -257,6 +257,6 @@ add_post.addEventListener('click', function(){
         
     }
     else{
-        prompt('Przejdź do zakładki posty')
+        alert('Przejdź do zakładki posty')
     }
 })
