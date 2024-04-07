@@ -110,7 +110,7 @@ localStorage.setItem('Hasło', JSON.stringify(Hasło_register.value));
 button_login.addEventListener('click', odczyt)
 function odczyt(){
     if('"'+Nazwa_login.value+'"' !== localStorage.getItem('Nazwa') || '"'+Haslo_login.value+'"' !== localStorage.getItem('Hasło')){
-        prompt('Podałeś błędne hasło lub login')
+        alert('Podałeś błędne hasło lub login')
     }
     else if('"'+Nazwa_login.value+'"' == localStorage.getItem('Nazwa') && '"'+Haslo_login.value+'"' == localStorage.getItem('Hasło'))
     {   
@@ -129,7 +129,7 @@ window.addEventListener('load', function(){
 })
     }
     else{
-        prompt("nie")
+        alert("Nie jesteś zalogowany")
 
     }
 })

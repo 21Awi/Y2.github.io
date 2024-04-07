@@ -109,7 +109,7 @@ localStorage.setItem('Hasło', JSON.stringify(Hasło_register.value));
 button_login.addEventListener('click', odczyt)
 function odczyt(){
     if('"'+Nazwa_login.value+'"' !== localStorage.getItem('Nazwa') || '"'+Haslo_login.value+'"' !== localStorage.getItem('Hasło')){
-        prompt('Podałeś błędne hasło lub login')
+        alert('Podałeś błędne hasło lub login')
     }
     else if('"'+Nazwa_login.value+'"' == localStorage.getItem('Nazwa') && '"'+Haslo_login.value+'"' == localStorage.getItem('Hasło'))
     {   
@@ -128,7 +128,7 @@ window.addEventListener('load', function(){
 })
     }
     else{
-        prompt("nie")
+        alert("Nie jesteś zalogowany")
     }
 })
 photos = [
@@ -252,9 +252,10 @@ zakladka_images.addEventListener('click',function(){
     posty_napis.className='ll'
 })
 let add_post = document.querySelector('.ADD_POSTS')
+let posty_okno = document.querySelector('.dodawanie_posts')
 add_post.addEventListener('click', function(){
     if(posty_napis.className=='napis_posty_po'){
-        
+        posty_okno.style.top='30%'
     }
     else{
         alert('Przejdź do zakładki posty')
