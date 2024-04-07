@@ -437,3 +437,55 @@ border: 3px solid #2F3336;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.home > img{
+    height: 48.45px;
+    width: 48.45px;
+    margin-top: 5%;
+    margin-left: 21.1%;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #E7E9EA;
+    font-family: "Source Code Pro", monospace;
+}
+#tak{
+    margin-top: 6%;
+    margin-left: 7%;
+}
+.gallery_photos_after_refresh{
+    position: relative;
+    top: -100%;
+}
+.napis_posty{
+    position: relative;
+    top: -100%;
+}
+.napis_posty_po{
+    font-family: "Source Code Pro", monospace;
+    color: #E7E9EA;
+    position: relative;
+    top: 21%;
+    left: 47.2%;
+}
+.ll{
+    position: relative;
+    top: -100%;
+}
+.ADD_POSTS > img{
+    height: 48.45px;
+    width: 48.45px;
+    margin-top: 9%;
+    margin-left: 21.1%;
+}
+.ADD_POSTS{
+    color: #E7E9EA;
+    font-family: "Source Code Pro", monospace;
+    display: flex;
+    align-items: center;
+}
+#POST_ADD_TEXT{
+    margin-top: 8%;
+    margin-left: 7%;
+}

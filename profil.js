@@ -227,3 +227,36 @@ photo3.addEventListener('click', function(){
 photo4.addEventListener('click', function(){
     photo_show.style.backgroundImage = "url('zdjecia/góry.png')";
 })
+//Wracanie do main
+function back(){
+    window.location.href='index.html'
+}
+//Posty profilu 
+let zakladka_posty = document.querySelector('#Posts')
+let posty_napis = document.querySelector('.napis_posty')
+let zakladka_images = document.querySelector('#Images')
+zakladka_posty.addEventListener('click', function(){
+    photo1.className='gallery_photos_after_refresh'
+    photo2.className='gallery_photos_after_refresh'
+    photo3.className='gallery_photos_after_refresh'
+    photo4.className='gallery_photos_after_refresh'
+    photo_show.className='gallery_photos_after_refresh'
+    posty_napis.className='napis_posty_po'
+})
+zakladka_images.addEventListener('click',function(){
+    photo1.className='gallery_photo1 g'
+    photo2.className='gallery_photo2 g'
+    photo3.className='gallery_photo3 g'
+    photo4.className='gallery_photo4 g'
+    photo_show.className='big'
+    posty_napis.className='ll'
+})
+let add_post = document.querySelector('.ADD_POSTS')
+add_post.addEventListener('click', function(){
+    if(posty_napis.className=='napis_posty_po'){
+        
+    }
+    else{
+        prompt('Przejdź do zakładki posty')
+    }
+})
