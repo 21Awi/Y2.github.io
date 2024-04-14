@@ -197,7 +197,7 @@ window.addEventListener('load', (event) =>{
 let log_out = document.querySelector('#Log_out')
 log_out.addEventListener('click', function(){
     window.location.href = "index.html"
-    localStorage.clear()
+    localStorage.setItem('czyzalogowano','nie')
 })
 
 
@@ -256,8 +256,21 @@ let posty_okno = document.querySelector('.dodawanie_posts')
 add_post.addEventListener('click', function(){
     if(posty_napis.className=='napis_posty_po'){
         posty_okno.style.top='30%'
+        
     }
     else{
         alert('Przejdź do zakładki posty')
     }
 })
+function post_dodany(){
+    var post_description = document.createElement('Description')
+    var Nick = document.createElement('Nick')
+    
+}
+let dodaj_post = document.querySelector('.button-12')
+let co_napisane = document.querySelector('#wpis_posty')
+dodaj_post.addEventListener('click', function(){
+    localStorage.setItem('Tresc_post',JSON.stringify(co_napisane.value))
+    posty_okno.style.top='-100%'
+})
+

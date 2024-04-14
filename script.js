@@ -117,10 +117,11 @@ function odczyt(){
         profil_background.style.top='-100%'
         logowanie.style.top='-100%'
         setTimeout(()=>{location.reload()},2000)
+        localStorage.setItem('czyzalogowano','tak')
     }
 }
 window.addEventListener('load', function(){
-    if(this.localStorage.getItem('Nazwa')!==null){
+    if(this.localStorage.getItem('czyzalogowano')!=='nie'){
     profil.addEventListener('click',function(){
         logowanie.style.top='-100%'
         logowanie.style.opacity='0'
