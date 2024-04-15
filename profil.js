@@ -205,7 +205,8 @@ log_out.addEventListener('click', function(){
 let following = document.querySelector('#Following')
 let followers = document.querySelector('#Followers')
 window.addEventListener('load', (event) =>{
-    following.innerHTML += Math.round(Math.random()*1000)
+    let i = 0;
+    following.innerHTML += i
     followers.innerHTML += Math.round(Math.random()*10)
 })
 
@@ -262,15 +263,23 @@ add_post.addEventListener('click', function(){
         alert('Przejdź do zakładki posty')
     }
 })
-function post_dodany(){
-    var post_description = document.createElement('Description')
-    var Nick = document.createElement('Nick')
-    
-}
+let beetwen_bottom = document.querySelector('#beetwen_bootom')
 let dodaj_post = document.querySelector('.button-12')
 let co_napisane = document.querySelector('#wpis_posty')
 dodaj_post.addEventListener('click', function(){
     localStorage.setItem('Tresc_post',JSON.stringify(co_napisane.value))
     posty_okno.style.top='-100%'
+    posty_napis.style.top='-100%'
+    var nick = document.createElement('div')
+    var posty_description = document.createElement('div')
+    var post = document.createElement('div')
+    nick.className="nick_posty_profil" 
+    nick.innerHTML=localStorage.getItem("Nazwa").slice(1,localStorage.getItem("Nazwa".length)-1)
+    post.className='posty_profil'
+    posty_description.className = 'posty_description'
+    posty_description.innerHTML =  localStorage.getItem("Tresc_post").slice(1,localStorage.getItem("Nazwa".length)-1)
+    post.appendChild(posty_description)
+    beetwen_bottom.appendChild(post)
+    post.appendChild(nick)
 })
 
